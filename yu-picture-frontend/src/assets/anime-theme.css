@@ -1,0 +1,171 @@
+:root {
+  --xl-bg: #f7f5ff;
+  --xl-card: rgba(255, 255, 255, 0.72);
+  --xl-card-strong: rgba(255, 255, 255, 0.88);
+  --xl-border: rgba(139, 111, 255, 0.18);
+  --xl-primary: #7c6cff;
+  --xl-primary-2: #68c8ff;
+  --xl-pink: #ff9dcb;
+  --xl-text: #23243a;
+  --xl-muted: #7d7f9b;
+  --xl-shadow: 0 24px 70px rgba(112, 110, 255, 0.16);
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 157, 203, 0.28), transparent 26%),
+    radial-gradient(circle at 86% 6%, rgba(104, 200, 255, 0.28), transparent 26%),
+    linear-gradient(135deg, #f8fbff 0%, #f1edff 48%, #fff5fb 100%);
+  color: var(--xl-text);
+  font-family:
+    Inter,
+    "HarmonyOS Sans SC",
+    "Microsoft YaHei",
+    "PingFang SC",
+    sans-serif;
+}
+
+a {
+  color: var(--xl-primary);
+}
+
+.anime-page {
+  position: relative;
+}
+
+.anime-page-title {
+  margin: 0;
+  color: var(--xl-text);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.anime-page-subtitle {
+  margin: 8px 0 0;
+  color: var(--xl-muted);
+}
+
+.anime-panel {
+  border: 1px solid var(--xl-border);
+  border-radius: 8px;
+  background: var(--xl-card);
+  box-shadow: var(--xl-shadow);
+  backdrop-filter: blur(18px);
+}
+
+.anime-section {
+  margin-bottom: 18px;
+}
+
+.anime-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.ant-btn {
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.ant-btn-primary {
+  border: 0;
+  background: linear-gradient(135deg, var(--xl-primary), var(--xl-primary-2));
+  box-shadow: 0 12px 26px rgba(124, 108, 255, 0.28);
+}
+
+.ant-btn-primary:not(:disabled):hover {
+  background: linear-gradient(135deg, #6f5cff, #54bfff);
+}
+
+.ant-btn-background-ghost.ant-btn-primary {
+  color: var(--xl-primary);
+  border-color: rgba(124, 108, 255, 0.38);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-input-search .ant-input,
+.ant-select-selector,
+.ant-picker,
+.ant-input-number,
+.ant-upload.ant-upload-select-picture-card {
+  border-color: rgba(124, 108, 255, 0.2) !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.74) !important;
+  box-shadow: none !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper-focused,
+.ant-select-focused .ant-select-selector {
+  border-color: rgba(124, 108, 255, 0.55) !important;
+  box-shadow: 0 0 0 3px rgba(124, 108, 255, 0.12) !important;
+}
+
+.ant-card,
+.ant-table-wrapper .ant-table,
+.ant-modal-content {
+  border: 1px solid var(--xl-border);
+  border-radius: 8px;
+  background: var(--xl-card-strong);
+  box-shadow: 0 16px 44px rgba(112, 110, 255, 0.1);
+  backdrop-filter: blur(16px);
+}
+
+.ant-card-head {
+  border-bottom-color: rgba(124, 108, 255, 0.14);
+}
+
+.ant-table-thead > tr > th {
+  background: rgba(246, 243, 255, 0.96) !important;
+  color: #4e4a72;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom-color: rgba(124, 108, 255, 0.1);
+}
+
+.ant-tag {
+  border: 1px solid rgba(124, 108, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  color: #6259a8;
+}
+
+.ant-tabs .ant-tabs-tab {
+  color: var(--xl-muted);
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--xl-primary);
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+  background: linear-gradient(90deg, var(--xl-primary), var(--xl-pink));
+}
+
+.ant-pagination .ant-pagination-item {
+  border-radius: 8px;
+  border-color: rgba(124, 108, 255, 0.18);
+}
+
+.ant-pagination .ant-pagination-item-active {
+  border-color: var(--xl-primary);
+}
+
+@media (max-width: 768px) {
+  .anime-page-title {
+    font-size: 22px;
+  }
+}
